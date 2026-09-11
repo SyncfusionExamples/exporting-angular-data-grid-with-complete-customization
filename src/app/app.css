@@ -1,0 +1,8 @@
+body {
+    margin: 0;
+}
+
+.grid-container {
+    width: 90%;
+    margin: 80px auto 0;
+}

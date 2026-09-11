@@ -1,0 +1,22 @@
+<div class="grid-container">
+
+  <ejs-grid #grid id ="Grid"
+        [dataSource]="data" 
+        [allowPaging]="true"
+        [allowPdfExport]="true"
+        [allowExcelExport]="true"
+        [toolbar]="toolbarOptions"
+        (toolbarClick)="toolbarClick($event)"
+        [pageSettings]="pageSettings">
+
+    <e-columns>
+      <e-column field='OrderID' headerText='Order ID' textAlign='right' width=90 isPrimaryKey='true'></e-column>
+      <e-column field='CustomerID' headerText='Customer ID' width=100></e-column>
+      <e-column field='Freight' headerText='Freight' textAlign='right' format='C2' width=100></e-column>
+      <e-column field='OrderDate' headerText='Order Date' textAlign='right' format='yMd' width=120></e-column>
+      <e-column field='ShipCountry' headerText='Ship Country' width=120></e-column>
+    </e-columns>
+
+  </ejs-grid>
+
+</div>
